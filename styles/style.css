@@ -14,6 +14,7 @@
   grid-template-rows: 1fr min-content 1fr;
   background-image: var(--bg-image);
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   block-size: 100vh; /* элемент занимает всю высоту вьюпорта */
   min-block-size: var(--header-block-size);
@@ -69,7 +70,6 @@
 
 .header__theme-menu {
   margin-top: 65px;
-  margin-right: 3px;
 }
 
 .header__theme-menu-list {
@@ -115,7 +115,7 @@
   justify-self: start;
   font-size: var(--clamp-font-size);
   font-weight: var(--bold);
-  line-height: 95.7px;
+  line-height: 95px;
   color: var(--title-color);
   text-shadow: 4px 4px var(--accent-color);
 }
@@ -125,7 +125,7 @@
   font-size: 18px;
   font-weight: var(--bold);
   block-size: 117px;
-  margin-top: 54px;
+  margin-top: 56px;
 }
 
 .title-decor {
@@ -141,13 +141,13 @@
   gap: var(--main-gap);
   padding: var(--main-padding);
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 20px;
 }
 
 .section__title {
@@ -182,7 +182,7 @@
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .section__subtitle {
@@ -224,7 +224,6 @@
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vh;
   min-block-size: 668px;
 }
 
@@ -268,7 +267,7 @@
   }
 
   .header__paragraph {
-    inline-size: 47.5%;
+    inline-size: 47.4%;
     justify-self: end;
     margin-top: 164px;
     margin-right: 20px;
@@ -355,8 +354,9 @@
   }
 
   .header__paragraph {
-    margin-right: 22px;
-    margin-top: 130px;
+    inline-size: 47.8%;
+    margin-right: 21px;
+    margin-top: 131px;
     block-size: 70px;
   }
 
