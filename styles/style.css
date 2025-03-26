@@ -14,7 +14,6 @@
   grid-template-rows: 1fr min-content 1fr;
   background-image: var(--bg-image);
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   block-size: 100vh; /* элемент занимает всю высоту вьюпорта */
   min-block-size: var(--header-block-size);
@@ -337,10 +336,6 @@
 @media (width >= 1024px) {
 
   /* header */
-
-  .header {
-    min-block-size: var(--header-block-size);
-  }
   
   .header__theme-menu {
     justify-self: center;
