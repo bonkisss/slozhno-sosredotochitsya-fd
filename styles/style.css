@@ -1,6 +1,5 @@
 .page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background-color: var(--bg-color);
   background-attachment: fixed;
   font-family: var(--main-font, serif);
@@ -223,7 +222,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 29px;
-  block-size: 668px;
+  block-size: 100vh;
 }
 
 .footer__title {
@@ -236,7 +235,7 @@
 
 /* MEDIA QUERY */
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
 
   /* header */
 
@@ -333,7 +332,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
 
   /* header */
   
@@ -380,7 +379,7 @@
   /* footer */
 
   .footer {
-    block-size: 768px;
-    margin-top: 60px;
+    block-size: 100vh;
+    margin-top: 308px;
   }
 }

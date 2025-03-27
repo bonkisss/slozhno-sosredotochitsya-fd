@@ -19,7 +19,7 @@
   --img-gap: 10px;
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   :root {
     --clamp-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --header-block-size: 1024px;
@@ -29,7 +29,7 @@
   }
 }
 
-@media (width >= 1024px) {
+@media (min-width: 1024px) {
   :root {
     --header-block-size: 768px;
   }
