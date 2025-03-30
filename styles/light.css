@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 1024px) {
-  :root.theme-light, .theme-auto {
+  :root.theme-light {
     --footer-shadow-color: #FF0070;
     --shadow-color: #FF0070;
   }
