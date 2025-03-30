@@ -8,7 +8,7 @@
   --nav-color: #353430;
   --section-title-color: #353430;
   --hover-color: rgba(50, 49, 45, 0.4); 
-  --footer-shadow-color: #FF0070;
+  --footer-shadow-color: #FF8DCB;
 }
 
 @media (prefers-color-scheme: light) {
@@ -22,11 +22,17 @@
     --nav-color: #353430;
     --section-title-color: #353430;
     --hover-color: rgba(50, 49, 45, 0.4); 
-    --footer-shadow-color: #FF0070;
+    --footer-shadow-color: #FF8DCB;
   }
   
   .theme-auto .header__rec {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root.theme-light, .theme-auto {
+    --footer-shadow-color: #FF0070;
   }
 }
 
