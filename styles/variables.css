@@ -4,33 +4,21 @@
   --title-color: #DB00FF;
   --accent-color: #FF0070;
   --text-color: #F1B2CE;
-  --shadow-color: #FF0070;
-  --hover-color: rgba(255, 0, 112, 0.4); 
+  --subtitle-color: #000028;
+  --nav-color: #FF0070;
   --section-title-color: #FF0070;
-  --section-subtitle-color: #000028;
+  --hover-color: rgba(255, 0, 112, 0.4); 
+  --footer-shadow-color: #FF0070;
+
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
   --clamp-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --bold: 700;
-  --thin: 400;
-  --header-block-size: 668px;
   --main-padding: 10px;
-  --main-gap: 52px;
-  --img-gap: 10px;
 }
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   :root {
     --clamp-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --header-block-size: 1024px;
     --main-padding: 20px;
-    --main-gap: 81px;
-    --img-gap: 20px;
-  }
-}
-
-@media (width >= 1024px) {
-  :root {
-    --header-block-size: 768px;
   }
 }

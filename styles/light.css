@@ -4,11 +4,11 @@
   --title-color: #FFC2E6;
   --accent-color: #FF8DCB;
   --text-color: #353430;
-  --decor-color: #353430;
-  --footer-shadow-color: #FF0070;
-  --hover-color: rgba(50, 49, 45, 0.4); 
+  --subtitle-color: #353430;
+  --nav-color: #353430;
   --section-title-color: #353430;
-  --section-subtitle-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4); 
+  --footer-shadow-color: #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,14 +18,18 @@
     --title-color: #FFC2E6;
     --accent-color: #FF8DCB;
     --text-color: #353430;
-    --decor-color: #353430;
-    --footer-shadow-color: #FF0070;
-    --hover-color: rgba(50, 49, 45, 0.4); 
+    --subtitle-color: #353430;
+    --nav-color: #353430;
     --section-title-color: #353430;
-    --section-subtitle-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.4); 
+    --footer-shadow-color: #FF0070;
   }
-
-  :root:not(.theme-dark) .header__element {
+  
+  .theme-auto .header__rec {
     display: none;
   }
+}
+
+.theme-light .header__rec {
+  display: none;
 }
