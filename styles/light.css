@@ -9,6 +9,7 @@
   --section-title-color: #353430;
   --hover-color: rgba(50, 49, 45, 0.4); 
   --footer-shadow-color: #FF8DCB;
+  --shadow-color: #FF8DCB;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,6 +24,7 @@
     --section-title-color: #353430;
     --hover-color: rgba(50, 49, 45, 0.4); 
     --footer-shadow-color: #FF8DCB;
+    --shadow-color: #FF8DCB;
   }
 
   :root:not(.theme-dark) .header__rec {
@@ -33,5 +35,11 @@
 @media (min-width: 1024px) {
   :root.theme-light, .theme-auto {
     --footer-shadow-color: #FF0070;
+    --shadow-color: #FF0070;
+  }
+
+  :root.theme-auto {
+    --footer-shadow-color: #FF0070;
+    --shadow-color: #FF0070;
   }
 }

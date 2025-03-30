@@ -24,7 +24,7 @@
   font-size: var(--clamp-font-size);
   line-height: 0.828em; /* 116px * 0.828 = 96px */
   color: var(--title-color);
-  text-shadow: 4px 4px var(--accent-color);
+  text-shadow: 4px 4px var(--shadow-color);
 }
 
 .header__paragraph {
