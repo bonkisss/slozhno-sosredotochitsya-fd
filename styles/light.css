@@ -24,8 +24,8 @@
     --hover-color: rgba(50, 49, 45, 0.4); 
     --footer-shadow-color: #FF8DCB;
   }
-  
-  .theme-auto .header__rec {
+
+  :root:not(.theme-dark) .header__rec {
     display: none;
   }
 }
@@ -34,8 +34,4 @@
   :root.theme-light, .theme-auto {
     --footer-shadow-color: #FF0070;
   }
-}
-
-.theme-light .header__rec {
-  display: none;
 }
