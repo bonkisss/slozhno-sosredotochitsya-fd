@@ -7,6 +7,7 @@
   --subtitle-color: #353430;
   --nav-color: #353430;
   --section-title-color: #353430;
+
   --hover-color: rgba(50, 49, 45, 0.4); 
   --footer-shadow-color: #FF8DCB;
   --shadow-color: #FF8DCB;
@@ -22,6 +23,7 @@
     --subtitle-color: #353430;
     --nav-color: #353430;
     --section-title-color: #353430;
+
     --hover-color: rgba(50, 49, 45, 0.4); 
     --footer-shadow-color: #FF8DCB;
     --shadow-color: #FF8DCB;
@@ -32,8 +34,9 @@
   }
 }
 
-@media (min-width: 1024px) and (prefers-color-scheme: light) {
-  :root {
+@media (min-width: 1024px) {
+  :root.theme-light,
+  :root:not(.theme-dark) {
     --footer-shadow-color: #FF0070;
     --shadow-color: #FF0070;
   }
