@@ -1,8 +1,22 @@
 .page {
-  font-family: var(--main-font, sans-serif);
+  position: relative;
+  font-family: var(--main-font, monospace);
   font-size: var(--main-font-size);
-  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  top: 100vh; /* Высота header */
+  width: 100%;
+  height: calc(100% - 100vh); 
+  background-color: var(--bg-color);
+  z-index: -1;
 }
 
 /* HEADER */
@@ -13,12 +27,9 @@
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
-  background-image: var(--bg-image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   block-size: 100vh;
   padding: var(--main-padding);
+  min-height: 668px;
 }
 
 .header__title {
@@ -91,6 +102,7 @@
 
 .header__rec {
   position: absolute;
+  display: var(--rec-display);
   color: var(--accent-color);
   inset-block-start: 11px;
   inset-inline-end: 38px;
@@ -171,7 +183,7 @@
 }
 
 .article__link:hover {
-  border-block-end: 1px solid currentColor;
+  border-block-end: 1px solid var(--text-color);
 }
 
 .article__link:focus {
@@ -179,7 +191,7 @@
 }
 
 .article__link:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--text-color);
 }
 
 /* gallery */
@@ -212,6 +224,7 @@
   align-items: center;
   block-size: 100vh;
   margin-block-start: 31px;
+  min-height: 668px;
 }
 
 .footer__title {
@@ -325,7 +338,7 @@
     column-gap: 10px;
   }
 
-  .section__row-container {
+  .section__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

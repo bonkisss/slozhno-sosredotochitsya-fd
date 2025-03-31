@@ -7,10 +7,10 @@
   --subtitle-color: #000028;
   --nav-color: #FF0070;
   --section-title-color: #FF0070;
-  
   --hover-color: rgba(255, 0, 112, 0.4); 
   --footer-shadow-color: #FF0070;
   --shadow-color: #FF0070;
+  --rec-display: inline;
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
   --clamp-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
