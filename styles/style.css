@@ -1,22 +1,12 @@
 .page {
-  position: relative;
   font-family: var(--main-font, monospace);
   font-size: var(--main-font-size);
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed
-}
-
-.page::after {
-  content: "";
-  position: absolute;
-  top: 100vh; /* Высота header */
-  width: 100%;
-  height: calc(100% - 100vh); 
-  background-color: var(--bg-color);
-  z-index: -1;
 }
 
 /* HEADER */
